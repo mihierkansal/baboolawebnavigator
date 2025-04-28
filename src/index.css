@@ -61,7 +61,8 @@ option {
 
 .main {
   display: flex;
-  min-width: 50vw;
+  width: 40rem;
+  max-width: 80vw;
   gap: 0.5rem;
   height: 2.5rem;
   & input {
@@ -75,4 +76,8 @@ button {
 
 select {
   width: 6rem;
+
+  @media screen and (max-width: 400px) {
+    display: none;
+  }
 }
