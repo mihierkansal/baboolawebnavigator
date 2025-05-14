@@ -1,5 +1,4 @@
 import { createSignal } from "solid-js";
-
 enum SearchEngine {
   Google,
   Bing,
@@ -40,8 +39,7 @@ function App() {
               go(inp.value);
             }}
           >
-            {" "}
-            Go
+            <span>Go</span>
           </button>
         </div>
       </div>
